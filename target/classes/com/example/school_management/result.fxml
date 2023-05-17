@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.resultController">
+   <children>
+      <AnchorPane fx:id="result_sub_pane1" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #00c8d4;">
+         <children>
+            <Button fx:id="res_One_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="195.0" mnemonicParsing="false" onAction="#res_one_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class One" />
+            <Button fx:id="res_two_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" onAction="#res_two_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class two" textFill="#400e59" />
+            <Button fx:id="res_three_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="292.0" mnemonicParsing="false" onAction="#res_three_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class Three" />
+            <Button fx:id="res_four_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="343.0" mnemonicParsing="false" onAction="#res_four_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class Four" />
+            <Button fx:id="res_five_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="396.0" mnemonicParsing="false" onAction="#res_five_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class Five" />
+            <Button fx:id="res_six_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="445.0" mnemonicParsing="false" onAction="#res_six_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class Six" />
+            <Button fx:id="res_seven_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="496.0" mnemonicParsing="false" onAction="#res_seven_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class Seven" />
+            <Button fx:id="res_eight_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="546.0" mnemonicParsing="false" onAction="#res_eight_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class Eight" />
+            <Button fx:id="res_nine_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="597.0" mnemonicParsing="false" onAction="#res_nine_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class Nine" />
+            <Button fx:id="res_ten_btn" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="649.0" mnemonicParsing="false" onAction="#res_ten_btn_click" prefHeight="40.0" prefWidth="660.0" style="-fx-background-color: #fff;" styleClass="all_button" stylesheets="@design.css" text="Class Ten" />
+            <Button fx:id="update_1" layoutX="684.0" layoutY="195.0" mnemonicParsing="false" onAction="#b1" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+            <Button fx:id="update_2" layoutX="684.0" layoutY="243.0" mnemonicParsing="false" onAction="#b2" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+            <Button fx:id="update_3" layoutX="684.0" layoutY="292.0" mnemonicParsing="false" onAction="#b3" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+            <Button fx:id="update_4" layoutX="684.0" layoutY="343.0" mnemonicParsing="false" onAction="#b4" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+            <Button fx:id="update_5" layoutX="684.0" layoutY="396.0" mnemonicParsing="false" onAction="#b5" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+            <Button fx:id="update_6" layoutX="684.0" layoutY="445.0" mnemonicParsing="false" onAction="#b6" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+            <Button fx:id="update_7" layoutX="684.0" layoutY="496.0" mnemonicParsing="false" onAction="#b7" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+            <Button fx:id="update_8" layoutX="684.0" layoutY="546.0" mnemonicParsing="false" onAction="#b8" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+            <Button fx:id="update_9" layoutX="682.0" layoutY="597.0" mnemonicParsing="false" onAction="#b9" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+            <Button fx:id="update_10" layoutX="682.0" layoutY="649.0" mnemonicParsing="false" onAction="#b10" prefHeight="40.0" prefWidth="110.0" styleClass="all_button" stylesheets="@design.css" text="Update" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="result_sub_pane2" layoutX="17.0" layoutY="22.0" prefHeight="147.0" prefWidth="766.0" style="-fx-background-color: #353c5b;">
+         <children>
+            <Label layoutX="295.0" layoutY="36.0" text=" Result !!" textFill="WHITE">
+               <font>
+                  <Font name="Dyuthi Regular" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="127.0" fitWidth="168.0" layoutX="67.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo_pictures/result_0.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="cls1_to_2_pane" prefHeight="700.0" prefWidth="800.0" visible="false">
+         <children>
+            <TableView fx:id="res_table_view12" layoutX="22.0" layoutY="14.0" prefHeight="640.0" prefWidth="756.0">
+              <columns>
+                <TableColumn fx:id="res_name12" prefWidth="143.20001220703125" text="Name" />
+                <TableColumn fx:id="res_roll12" prefWidth="86.4000244140625" text="Roll" />
+                  <TableColumn fx:id="res_cls12" prefWidth="142.39996337890625" text="Class" />
+                  <TableColumn fx:id="bangla12" prefWidth="132.79998779296875" text="Bangla" />
+                  <TableColumn fx:id="english12" prefWidth="124.79998779296875" text="English" />
+                  <TableColumn fx:id="math12" prefWidth="125.60003662109375" text="Math" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="secondary_pane" prefHeight="700.0" prefWidth="800.0" visible="false">
+         <children>
+            <TableView fx:id="secondary_tableview" layoutX="22.0" layoutY="14.0" prefHeight="640.0" prefWidth="756.0">
+               <columns>
+                  <TableColumn fx:id="sec_name" prefWidth="100.80001831054688" text="Name" />
+                  <TableColumn fx:id="sec_roll" prefWidth="63.199981689453125" text="Roll" />
+                  <TableColumn fx:id="sec_cls" prefWidth="63.199981689453125" text="Class" />
+                  <TableColumn fx:id="sec_bng1" prefWidth="80.00006103515625" text="Bangla 1st" />
+                  <TableColumn fx:id="sec_bng2" prefWidth="76.79998779296875" text="Bangla 2nd" />
+                  <TableColumn fx:id="sec_eng1" prefWidth="71.99993896484375" text="English 1st" />
+                  <TableColumn fx:id="sec_eng2" prefWidth="84.0" text="English 2nd" />
+                  <TableColumn fx:id="sec_mth" prefWidth="53.5999755859375" text="Math" />
+                  <TableColumn fx:id="sec_science" prefWidth="52.800048828125" text="Science" />
+                  <TableColumn fx:id="sec_bgs" prefWidth="44.7999267578125" text="BGS" />
+                  <TableColumn fx:id="sec_reli" prefWidth="80.79998779296875" text="Religion" />
+                  <TableColumn fx:id="sec_ict" prefWidth="43.199951171875" text="ICT" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ssc_pane" layoutY="-4.0" prefHeight="707.0" prefWidth="800.0" visible="false">
+         <children>
+            <TableView fx:id="ssc_tableview" layoutX="22.0" layoutY="21.0" prefHeight="628.0" prefWidth="756.0">
+               <columns>
+                  <TableColumn fx:id="SSC_name" prefWidth="59.0" text="Name" />
+                  <TableColumn fx:id="SSC_roll" prefWidth="72.0" text="Roll" />
+                  <TableColumn fx:id="SSC_cls" prefWidth="53.0" text="Class" />
+                  <TableColumn fx:id="SSC_bng1" prefWidth="73.0" text="Bangla 1st" />
+                  <TableColumn fx:id="SSC_bng2" prefWidth="75.0" text="Bangla 2nd" />
+                  <TableColumn fx:id="SSC_eng1" text="English 1st" />
+                  <TableColumn fx:id="SSC_eng2" prefWidth="72.0" text="English 2nd" />
+                  <TableColumn fx:id="SSC_mth" prefWidth="44.0" text="Math" />
+                  <TableColumn fx:id="SSC_phy" prefWidth="56.0" text="Physics" />
+                  <TableColumn fx:id="SSC_chem" minWidth="0.0" prefWidth="47.0" text="Chem" />
+                  <TableColumn fx:id="SSC_bio" minWidth="0.0" prefWidth="54.0" text="Biology" />
+                  <TableColumn fx:id="SSC_hm" minWidth="0.0" prefWidth="70.0" text="Higher math" />
+               </columns>
+            </TableView>
+            <Button fx:id="sicene_btn" layoutX="225.0" layoutY="668.0" mnemonicParsing="false" onAction="#sci" prefHeight="30.0" prefWidth="174.0" styleClass="login-button" stylesheets="@frontpage_css.css" text="Science" textFill="#f4f4f4" />
+            <Button fx:id="com_btn" layoutX="412.0" layoutY="668.0" mnemonicParsing="false" onAction="#cmrc" prefHeight="30.0" prefWidth="165.0" styleClass="login-button" stylesheets="@frontpage_css.css" text="Commerce" textFill="#f4f4f4" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="print_btn" layoutX="723.0" layoutY="665.0" mnemonicParsing="false" onAction="#prim_print_rep" prefHeight="30.0" prefWidth="62.0" styleClass="login-button" stylesheets="@frontpage_css.css" text="Print" textFill="#f4f4f4" visible="false" />
+      <Button fx:id="result_back_button" layoutX="22.0" layoutY="665.0" mnemonicParsing="false" onAction="#res_back_btn_click" prefHeight="30.0" prefWidth="62.0" styleClass="login-button" stylesheets="@frontpage_css.css" text="Back" textFill="#f4f4f4" visible="false" />
+      <AnchorPane fx:id="dcsn" layoutX="144.0" layoutY="158.0" prefHeight="384.0" prefWidth="516.0" visible="false">
+         <children>
+            <Button fx:id="sci_excel" layoutX="51.0" layoutY="192.0" mnemonicParsing="false" onAction="#sc" prefHeight="30.0" prefWidth="174.0" styleClass="login-button" stylesheets="@frontpage_css.css" text="Science" textFill="#f4f4f4" />
+            <Button fx:id="com_excel" layoutX="284.0" layoutY="192.0" mnemonicParsing="false" onAction="#cm" prefHeight="30.0" prefWidth="165.0" styleClass="login-button" stylesheets="@frontpage_css.css" text="Commerce" textFill="#f4f4f4" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
