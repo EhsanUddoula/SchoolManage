@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="tchr_mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.Staff_controller">
+    <children>
+        <AnchorPane fx:id="anchorpane" prefHeight="700.0" prefWidth="800.0">
+            <children>
+                <AnchorPane fx:id="left_pane" onMouseClicked="#text_field_design" onMouseDragged="#text_field_design" prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #93e1e7;">
+                    <children>
+                        <Label layoutX="28.0" layoutY="32.0" text="ID:">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="27.0" layoutY="72.0" prefHeight="25.0" prefWidth="74.0" text="Name:">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="26.0" layoutY="113.0" prefHeight="25.0" prefWidth="96.0" text="Designatoin:">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="27.0" layoutY="157.0" prefHeight="25.0" prefWidth="90.0" text="Gender:">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="20.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="gender" layoutX="124.0" layoutY="155.0" onKeyTyped="#text_field_design" onMouseClicked="#text_field_design" onMouseDragged="#text_field_design" prefHeight="33.0" prefWidth="208.0" promptText="Choose...." styleClass="textfield-design" stylesheets="@design.css" AnchorPane.leftAnchor="124.0" />
+                        <Label layoutX="27.0" layoutY="319.0" prefHeight="23.0" prefWidth="90.0" text="Picture:">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="20.0" />
+                            </font>
+                        </Label>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbfcfc" height="106.0" layoutX="155.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
+                        <Label fx:id="file_path" alignment="CENTER" layoutX="152.0" layoutY="391.0" prefHeight="20.0" prefWidth="117.0" text="Click to Add" textFill="#132a63">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="img_view" fitHeight="110.0" fitWidth="110.0" layoutX="155.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="insert_img" layoutX="155.0" layoutY="275.0" mnemonicParsing="false" onAction="#ImgInsert" prefHeight="106.0" prefWidth="110.0" styleClass="insert_image-button" stylesheets="@design.css" text="Insert image" textFill="#2748a9">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="insert" layoutX="26.0" layoutY="433.0" mnemonicParsing="false" onAction="#insert" prefHeight="82.0" prefWidth="90.0" style="-fx-background-color: #00c8d4;" styleClass="insert-button" stylesheets="@design.css" text="Insert" />
+                        <Button fx:id="update" layoutX="127.0" layoutY="481.0" mnemonicParsing="false" onAction="#update_Crud" prefHeight="82.0" prefWidth="90.0" style="-fx-background-color: #00c8d4;" styleClass="insert-button" stylesheets="@design.css" text="Update" />
+                        <Button fx:id="clear" layoutX="228.0" layoutY="433.0" mnemonicParsing="false" onAction="#clear" prefHeight="82.0" prefWidth="90.0" style="-fx-background-color: #00c8d4;" styleClass="insert-button" stylesheets="@design.css" text="Clear" />
+                        <Button fx:id="delete" layoutX="26.0" layoutY="530.0" mnemonicParsing="false" onAction="#delete" prefHeight="82.0" prefWidth="90.0" style="-fx-background-color: #00c8d4;" styleClass="insert-button" stylesheets="@design.css" text="Delete" />
+                        <Button fx:id="print" layoutX="228.0" layoutY="530.0" mnemonicParsing="false" onAction="#print_rep" prefHeight="82.0" prefWidth="90.0" style="-fx-background-color: #00c8d4;" styleClass="insert-button" stylesheets="@design.css" text="Print" />
+                        <ComboBox fx:id="subject" layoutX="124.0" layoutY="109.0" onKeyTyped="#text_field_design" onMouseClicked="#text_field_design" onMouseDragged="#text_field_design" prefHeight="33.0" prefWidth="208.0" promptText="Choose...." styleClass="textfield-design" stylesheets="@design.css" />
+                        <Label layoutX="27.0" layoutY="201.0" prefHeight="23.0" prefWidth="74.0" text="Mobile:">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="id" layoutX="123.0" layoutY="28.0" onMouseClicked="#text_field_design" onMouseDragged="#text_field_design" prefHeight="33.0" prefWidth="208.0" styleClass="textfield-design" stylesheets="@design.css" />
+                        <TextField fx:id="name" layoutX="123.0" layoutY="68.0" onMouseClicked="#text_field_design" onMouseDragged="#text_field_design" prefHeight="33.0" prefWidth="208.0" styleClass="textfield-design" stylesheets="@design.css" />
+                        <TextField fx:id="mobile" layoutX="123.0" layoutY="196.0" onMouseClicked="#text_field_design" onMouseDragged="#text_field_design" prefHeight="33.0" prefWidth="208.0" styleClass="textfield-design" stylesheets="@design.css" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="345.0" prefHeight="700.0" prefWidth="455.0">
+                    <children>
+                        <Separator layoutX="-3.0" layoutY="-340.0" orientation="VERTICAL" prefHeight="1038.0" prefWidth="0.0" />
+                        <TableView fx:id="table_view" layoutX="16.0" layoutY="33.0" onMouseClicked="#selectData" prefHeight="653.0" prefWidth="423.0" style="-fx-background-color: #00c8d4;">
+                            <columns>
+                                <TableColumn fx:id="id_table" prefWidth="75.0" text="ID" />
+                                <TableColumn fx:id="name_table" prefWidth="75.0" text="Name" />
+                                <TableColumn fx:id="subject_table" prefWidth="98.0" text="Designation" />
+                                <TableColumn fx:id="Gender_table" prefWidth="52.0" text="Gender" />
+                                <TableColumn fx:id="mobile_table" prefWidth="121.60002441406249" text="Mobile" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+/* login page*/
+.login-bg
+{
+    -fx-background-color: linear-gradient(to bottom right,#353c5b, #47474b);
+}
+.close
+{
+    -fx-background-color: #4e5573;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+.close:hover
+{
+    -fx-background-color: #8388a0;
+}
+.text_field-design
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-color: linear-gradient(to bottom right,#000, #000);
+    -fx-border-radius: 10px;
+    -fx-text-inner-color: #000;
+}
+.login-button
+{
+    -fx-background-color: linear-gradient(to bottom right,#353c5b, #47474b);
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+.login-button:hover
+{
+    -fx-background-color: linear-gradient(to bottom right, #687487,#8f9aac);
+}
+.crtacc
+{
+    -fx-text-fill:#000;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+}
+.crtacc:hover
+{
+    -fx-underline: true;
+}
+
